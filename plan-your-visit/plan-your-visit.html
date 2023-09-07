@@ -28,17 +28,23 @@
       <div class="navbar-logo">
         <a href=""><img src="./img/logo.svg" alt="" /></a>
       </div>
-      <div class="navbar-nav">
-        <a href="">Home</a>
-        <a href="" class="active">Plan Your Visit</a>
+      <div id="dropdown" class="navbar-nav">
+        <div class="navbar-middle">
+          <a href="">Home</a>
+          <a href="" class="active">Plan Your Visit</a>
 
-        <a href="">Our Service?</a>
-        <a href="">About</a>
-        <a href="">Book Appointment</a>
+          <a href="">Our Service?</a>
+          <a href="">About</a>
+          <a href="">Book Appointment</a>
+        </div>
+        <div class="navbar-login">
+          <a href="" class="login">Login</a>
+        </div>
       </div>
       <div class="navbar-right">
-        <a href="" class="login">Login</a>
-        <a href="" class="menu"> <img src="./img/menu.svg" alt="" /> </a>
+        <a id="menu" class="menu">
+          <img src="./img/menu.svg" alt="" />
+        </a>
       </div>
     </nav>
     <!-- Navbar End -->
@@ -149,7 +155,9 @@
               <p>When can I book my appointment?</p>
               <img src="./img/down-arrow.svg" alt="" />
             </div>
-            <div class="content"></div>
+            <div class="content">
+              <p>Tomorrow</p>
+            </div>
           </div>
           <hr />
           <div class="accordion-tab">
@@ -157,7 +165,9 @@
               <p>When do I book my appointment?</p>
               <img src="./img/down-arrow.svg" alt="" />
             </div>
-            <div class="content"></div>
+            <div class="content">
+              <p>Tomorrow</p>
+            </div>
           </div>
           <hr />
           <div class="accordion-tab">
@@ -165,7 +175,9 @@
               <p>Can I reschedule my appointment?</p>
               <img src="./img/down-arrow.svg" alt="" />
             </div>
-            <div class="content"></div>
+            <div class="content">
+              <p>Tomorrow</p>
+            </div>
           </div>
           <hr />
           <div class="accordion-tab">
@@ -173,7 +185,9 @@
               <p>Can I make an appointment on the same day?</p>
               <img src="./img/down-arrow.svg" alt="" />
             </div>
-            <div class="content"></div>
+            <div class="content">
+              <p>Tomorrow</p>
+            </div>
           </div>
           <hr />
           <div class="accordion-tab">
@@ -181,7 +195,9 @@
               <p>How do I cancel my appointment?</p>
               <img src="./img/down-arrow.svg" alt="" />
             </div>
-            <div class="content"></div>
+            <div class="content">
+              <p>Tomorrow</p>
+            </div>
           </div>
           <hr />
           <div class="accordion-tab">
@@ -189,7 +205,9 @@
               <p>When can I book my appointment?</p>
               <img src="./img/down-arrow.svg" alt="" />
             </div>
-            <div class="content"></div>
+            <div class="content">
+              <p>Tomorrow</p>
+            </div>
           </div>
           <hr />
         </div>
@@ -252,5 +270,8 @@
         <p>© 2023 Our Orthos</p>
       </div>
     </footer>
+
+    <!-- Javascript -->
+    <script src="./js/plan-your-visit.js"></script>
   </body>
 </html>

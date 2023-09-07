@@ -33,31 +33,36 @@ body {
   top: 0;
 }
 /* Navbar Logo */
+.navbar .navbar-logo {
+  flex: 1 0 20%;
+}
 .navbar .navbar-logo img {
   width: 10rem;
 }
 /* Navbar Link */
-.navbar .navbar-nav a {
-  color: var(--primary);
-  display: inline-block;
-  margin: 0 1rem;
+.navbar .navbar-nav {
+  display: flex;
+  flex: 1 0 80%;
+  justify-content: space-between;
 }
 
-.navbar .navbar-nav a:hover {
+.navbar .navbar-nav .navbar-middle a {
+  color: var(--primary);
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-nav .navbar-middle a:hover {
   border-bottom: var(--primary) 2px solid;
   transition: 0.1s linear;
 }
 
-.navbar .navbar-nav .active {
+.navbar .navbar-nav .navbar-middle .active {
   border-bottom: var(--primary) 2px solid;
 }
 
-.navbar .navbar-right a {
-  margin: 0 0.5rem;
+.navbar .navbar-nav .navbar-login a {
   color: var(--secondary);
-}
-
-.navbar .navbar-right .login {
   background-color: var(--primary);
   border-radius: 15px;
   min-width: 2rem;
@@ -65,7 +70,18 @@ body {
   font-weight: bold;
 }
 
-.navbar .navbar-right .menu {
+.navbar .navbar-nav .navbar-login a:hover {
+  color: var(--primary);
+  background-color: var(--secondary);
+  border: var(--primary) 1px solid;
+}
+
+.navbar .navbar-right a {
+  margin: 0 0.5rem;
+  color: var(--secondary);
+}
+
+.navbar .navbar-right {
   color: var(--primary);
   display: none;
 }
@@ -225,6 +241,7 @@ hr {
 
 .faq .container .accordion .accordion-tab {
   cursor: pointer;
+  padding: 0.62rem;
 }
 
 .faq .container .accordion .accordion-tab .label {
@@ -232,7 +249,15 @@ hr {
   color: var(--secondary);
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  transition: 0.4s;
+}
+
+.faq .container .accordion .accordion-tab .content {
+  padding: 0 0.62rem;
+  color: black;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
 }
 
 .faq .container .accordion hr {
@@ -304,22 +329,115 @@ footer .copyright {
   font-size: 0.87rem;
 }
 
-@media (max-width: 480px) {
-  /* html {
-    font-size: 90%;
-  } */
-  .navbar .navbar-right .menu {
-    display: inline-block;
-  }
+@media (max-width: 1199.98) {
+}
 
-  .navbar .navbar-right .login {
-    display: none;
+@media (max-width: 991.98px) {
+  .navbar .navbar-right {
+    display: block;
   }
 
   .navbar .navbar-nav {
     display: none;
+    position: absolute;
+    right: 0;
+    margin-right: 7%;
+    top: 60px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: var(--secondary);
+    opacity: 0.8;
+    overflow: hidden;
+    border: var(--primary) 1px solid;
   }
 
+  .navbar .navbar-nav.open {
+    display: block;
+  }
+
+  .navbar .navbar-nav .navbar-middle a {
+    margin: 0;
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .navbar .navbar-nav .navbar-middle a:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: none;
+  }
+
+  .navbar .navbar-nav .navbar-middle .active {
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: none;
+  }
+
+  .navbar .navbar-nav .navbar-login a {
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .navbar .navbar-nav .navbar-login a:hover {
+    color: var(--primary);
+    background-color: var(--secondary);
+    border: var(--primary) 1px solid;
+  }
+
+  .footer {
+    grid-template-columns: auto auto auto;
+  }
+
+  .footer .copyright {
+    grid-column: 1 / span 3;
+  }
+
+  .footer .footer-logo {
+    grid-column: 1 / span 3;
+    justify-content: center;
+  }
+
+  .footer .footer-link ul {
+    columns: 1;
+  }
+
+  .footer .footer-link,
+  .contact-us,
+  .follow {
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer {
+    grid-template-columns: auto auto auto;
+  }
+
+  .footer .copyright {
+    grid-column: 1 / span 3;
+  }
+
+  .footer .footer-logo {
+    grid-column: 1 / span 3;
+    justify-content: center;
+  }
+
+  .footer .footer-link ul {
+    columns: 1;
+  }
+
+  .footer .footer-link,
+  .contact-us,
+  .follow {
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* html {
+    font-size: 90%;
+  } */
   .hero {
     display: block;
     text-align: center;
@@ -408,10 +526,4 @@ footer .copyright {
   .follow {
     margin-bottom: 1.25rem;
   }
-}
-
-@media (max-width: 768px) {
-}
-
-@media (max-width: 1024px) {
 }
