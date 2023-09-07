@@ -49,7 +49,7 @@ body {
 .navbar .navbar-nav .navbar-middle a {
   color: var(--primary);
   display: inline-block;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
 }
 
 .navbar .navbar-nav .navbar-middle a:hover {
