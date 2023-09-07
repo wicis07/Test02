@@ -1,0 +1,165 @@
+/* Universal */
+:root {
+  --primary: #36a5b2;
+  --background: #f6f6f6;
+  --secondary: white;
+  --third: #b24336;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+  background-color: var(--secondary);
+  position: sticky;
+  height: 86px;
+}
+
+.navbar .navbar-logo img {
+  width: 150px;
+}
+
+.navbar .navbar-nav a {
+  color: var(--primary);
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 16px;
+}
+
+.navbar .navbar-nav .active {
+  border-bottom: var(--primary) 2px solid;
+}
+
+.navbar .navbar-login a {
+  background-color: var(--primary);
+  border-radius: 10px;
+  padding: 5px 15px;
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  padding: 20px 7%;
+  background-color: var(--primary);
+  justify-content: space-between;
+  align-items: center;
+  height: 350px;
+  overflow: visible;
+}
+
+.hero h1 {
+  color: var(--secondary);
+  font-size: 64px;
+}
+
+.hero h1 u {
+  color: var(--secondary);
+}
+
+.hero img {
+  margin-top: auto;
+  width: 400px;
+}
+
+/* What to Do */
+.what-to-do {
+  padding: 20px 7%;
+  margin: 105px 0;
+}
+
+.what-to-do .title {
+  text-align: center;
+}
+
+.what-to-do .title h2 {
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.what-to-do .title p {
+  font-size: 18px;
+}
+
+.what-to-do .title img {
+  width: 150px;
+  margin-top: 20px;
+}
+
+.steps {
+  margin-top: 105px;
+}
+
+.step1 {
+  margin: 0 20%;
+  margin-bottom: 66px;
+}
+
+.steps .step1 .step {
+  color: var(--third);
+  width: fit-content;
+  border-bottom: var(--third) 2px solid;
+  border-image: linear-gradient(to right, var(--third) 30%, transparent 30%) 1;
+}
+
+.steps .step1 img {
+  width: 70px;
+  vertical-align: middle;
+}
+
+.steps .step1 .step1-text {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+hr {
+  border: 1px solid;
+}
+
+.end {
+  float: right;
+}
+
+/* FaQ */
+
+/* Footer */
+
+@media (max-width: 420px) {
+  .hero {
+    display: block;
+    padding: 20px 7%;
+    background-color: var(--primary);
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    overflow: visible;
+  }
+
+  .hero h1 {
+    font-size: 20px;
+  }
+
+  .hero img {
+    margin-top: auto;
+    width: 170px;
+  }
+}
