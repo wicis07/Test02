@@ -402,22 +402,22 @@ footer .copyright {
 }
 
 @media (max-width: 767.98px) {
-  .hero {
+  /* .hero {
     display: block;
     text-align: center;
-  }
+  } */
 
   .hero h1 {
-    font-size: 2.3rem;
+    font-size: 2.68rem;
   }
 
   .hero img {
-    width: 10.62rem;
+    width: 40vh;
   }
 
   .what-to-do {
-    padding: 1.25rem 7%;
-    margin: 3.12rem 0;
+    /* padding: 0 7%; */
+    /* margin: 3.12rem 0; */
   }
 
   .steps {
@@ -425,39 +425,39 @@ footer .copyright {
   }
 
   .steps .step {
-    display: block;
+    /* display: block; */
   }
 
-  .steps .step .step-image,
-  .step-title {
+  .steps .step .step-image
+  /*.step-title */ {
     text-align: center;
   }
 
   .steps .step .step-content {
-    margin: 0;
-    width: 100%;
+    /* margin: 0; */
+    /* width: 100%; */
   }
 
   .steps .step .step-content .step-title {
-    color: var(--third);
-    border-bottom: var(--third) 2px solid;
+    /* color: var(--third); */
+    /* border-bottom: var(--third) 2px solid; */
     border-image: linear-gradient(to right, var(--third) 100%, transparent 100%)
       1;
   }
 
   .steps .step .step-content .schedule {
-    width: 100%;
+    /* width: 100%; */
   }
 
   .faq .container {
     grid-template-columns: 100%;
-    justify-content: center;
+    /* justify-content: center; */
     margin: 0;
   }
 
   .faq .container .faq-image {
     grid-row: 2;
-    margin: 0 1.25rem;
+    /* margin: 0 1.25rem; */
     justify-content: center;
   }
 
@@ -474,74 +474,6 @@ footer .copyright {
   /* html {
     font-size: 70%;
   } */
-  .hero {
-    display: block;
-    text-align: center;
-  }
-
-  .hero h1 {
-    font-size: 2.3rem;
-  }
-
-  .hero img {
-    width: 10.62rem;
-  }
-
-  .what-to-do {
-    padding: 1.25rem 7%;
-    margin: 3.12rem 0;
-  }
-
-  .steps {
-    margin: 0 5%;
-  }
-
-  .steps .step {
-    /* margin: 2.06rem 0; */
-    display: block;
-  }
-
-  .steps .step .step-image,
-  .step-title,
-  h3 {
-    text-align: center;
-  }
-
-  .steps .step .step-content {
-    margin: 0;
-    width: 100%;
-  }
-
-  .steps .step .step-content .step-title {
-    color: var(--third);
-    border-bottom: var(--third) 2px solid;
-    border-image: linear-gradient(to right, var(--third) 100%, transparent 100%)
-      1;
-  }
-
-  .steps .step .step-content .schedule {
-    width: 100%;
-  }
-
-  .faq .container {
-    grid-template-columns: 100%;
-    justify-content: center;
-    margin: 0;
-  }
-
-  .faq .container .faq-image {
-    grid-row: 2;
-    margin: 0 1.25rem;
-    justify-content: center;
-  }
-
-  .faq .container .faq-image img {
-    max-width: 100%;
-  }
-
-  .faq .container .accordion {
-    grid-row: 1;
-  }
 
   .footer {
     display: block;
