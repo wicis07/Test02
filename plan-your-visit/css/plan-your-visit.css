@@ -75,15 +75,13 @@ body {
   background-color: var(--secondary);
   border: var(--primary) 1px solid;
 }
+/* Navbar Menu Button */
+.navbar .navbar-right {
+  display: none;
+}
 
 .navbar .navbar-right a {
   margin: 0 0.5rem;
-  color: var(--secondary);
-}
-
-.navbar .navbar-right {
-  color: var(--primary);
-  display: none;
 }
 
 /* Hero */
