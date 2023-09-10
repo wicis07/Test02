@@ -1,9 +1,11 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
+console.log("connected");
+// Navbar Menu Button
+var navbarNav = document.getElementById("dropdown"),
+  menuButton = document.getElementById("menu");
 
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
+menuButton.onclick = function () {
+  navbarNav.classList.toggle("open");
+};
 
 // SET INTERVAL FOR CAROUSEL SERVIVES
 
