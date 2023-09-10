@@ -110,7 +110,7 @@ body {
 /* What to Do */
 .what-to-do {
   padding: 0 7%;
-  margin: 4.68rem 0;
+  margin: 4.68rem 0 0;
 }
 
 .what-to-do .title {
@@ -132,59 +132,60 @@ body {
   margin-top: 1rem;
 }
 /* What to Do Steps */
-.steps {
+.what-to-do .steps {
   margin: 0 20%;
 }
 
-.steps .step {
+.what-to-do .steps .step {
   margin: 4.12rem 0;
   display: flex;
 }
 
-.steps .step .step-image img {
-  width: 4.5rem;
-  margin: 0 1rem;
+.what-to-do .steps .step .step-image {
+  padding: 0 1rem;
 }
 
-.steps .step .step-content .step-title {
+.what-to-do .steps .step .step-image img {
+  width: 4.5rem;
+}
+
+.what-to-do .steps .step .step-container {
+  padding: 0 1rem;
+}
+
+.what-to-do .steps .step .step-container .step-title p {
   color: var(--third);
   width: fit-content;
   border-bottom: var(--third) 2px solid;
   border-image: linear-gradient(to right, var(--third) 30%, transparent 30%) 1;
 }
 
-.steps .step .step-content {
-  margin: 0 1rem;
-}
-
-.steps .step .step-content .schedule p {
+.what-to-do .steps .step .step-container .schedule p {
   width: 9.43rem;
 }
 /* What to Do Step 2 Schedule */
-.weekday,
+.what-to-do .steps .step .step-container .schedule .weekday,
 .saturday,
 .sunday {
   display: flex;
 }
 
-.steps .step .step-content .schedule .end {
+.what-to-do .steps .step .step-container .schedule .end {
   float: right;
 }
 
-.weekday span,
-.saturday span,
-.sunday span {
+.what-to-do .steps .step .step-container .schedule span {
   margin-left: 1rem;
 }
 /* What to Do Step 3 Booking */
-.steps .step .step-content .book {
+.what-to-do .steps .step .step-container .book {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 4.12rem;
 }
 
-.steps .step .step-content .book a {
+.what-to-do .steps .step .step-container .book a {
   background-color: var(--primary);
   color: var(--secondary);
   border-radius: 5px;
@@ -213,8 +214,7 @@ hr {
 }
 /* Faq Container */
 .faq .container {
-  margin: 0 10%;
-  margin-top: 20px;
+  margin: 20px 10% 0;
   background-color: var(--secondary);
   border-radius: 15px;
   display: grid;
@@ -229,7 +229,7 @@ hr {
 }
 
 .faq .container .faq-image img {
-  width: 45vh;
+  max-width: 55vh;
 }
 /* Faq Accordion */
 .faq .container .accordion {
@@ -331,9 +331,26 @@ footer .copyright {
   font-size: 0.87rem;
 }
 
-@media (max-width: 1199.98) {
-}
+/* Media Queries */
+/* Small Screen desktop/laptop */
+@media (max-width: 1199.98px) {
+  .what-to-do .steps {
+    margin: 0 16%;
+  }
 
+  .faq .container {
+    grid-template-columns: 100%;
+  }
+
+  .faq .container .faq-image {
+    grid-row: 2;
+  }
+
+  .faq .container .accordion {
+    grid-row: 1;
+  }
+}
+/* Large Tablet */
 @media (max-width: 991.98px) {
   .navbar .navbar-right {
     display: block;
@@ -387,6 +404,26 @@ footer .copyright {
     border: var(--primary) 1px solid;
   }
 
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero img {
+    width: 48vh;
+  }
+
+  .what-to-do {
+    margin: 2.81rem 0 0;
+  }
+
+  .what-to-do .steps {
+    margin: 0 12%;
+  }
+
+  .faq {
+    margin: 2.81rem 0;
+  }
+
   .footer {
     grid-template-columns: auto auto auto;
   }
@@ -400,80 +437,66 @@ footer .copyright {
     justify-content: center;
   }
 }
-
+/* Tablet */
 @media (max-width: 767.98px) {
-  /* .hero {
+  .hero {
     display: block;
     text-align: center;
-  } */
+  }
 
   .hero h1 {
-    font-size: 2.68rem;
+    font-size: 2.4rem;
   }
 
   .hero img {
-    width: 40vh;
+    margin: 0;
+    width: 36vh;
   }
 
-  .what-to-do {
-    /* padding: 0 7%; */
-    /* margin: 3.12rem 0; */
-  }
-
-  .steps {
+  .what-to-do .steps {
     margin: 0 5%;
   }
 
-  .steps .step {
-    /* display: block; */
+  .what-to-do .steps .step {
+    display: block;
   }
 
-  .steps .step .step-image
-  /*.step-title */ {
+  .what-to-do .steps .step .step-image {
     text-align: center;
   }
 
-  .steps .step .step-content {
-    /* margin: 0; */
-    /* width: 100%; */
-  }
-
-  .steps .step .step-content .step-title {
-    /* color: var(--third); */
-    /* border-bottom: var(--third) 2px solid; */
-    border-image: linear-gradient(to right, var(--third) 100%, transparent 100%)
-      1;
-  }
-
-  .steps .step .step-content .schedule {
-    /* width: 100%; */
-  }
-
-  .faq .container {
-    grid-template-columns: 100%;
-    /* justify-content: center; */
+  .what-to-do .steps .step .step-container {
     margin: 0;
   }
 
-  .faq .container .faq-image {
-    grid-row: 2;
-    /* margin: 0 1.25rem; */
-    justify-content: center;
+  .what-to-do .steps .step .step-container .step-title h3 {
+    text-align: center;
+  }
+
+  .what-to-do .steps .step .step-container .step-title p {
+    border-image: linear-gradient(to right, var(--third) 100%, transparent 100%)
+      1;
+    margin: auto;
+  }
+
+  .faq .container {
+    margin: 0;
+  }
+}
+/* Mobile */
+@media (max-width: 575.98px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero img {
+    margin: 0;
+    width: 24vh;
   }
 
   .faq .container .faq-image img {
-    max-width: 100%;
+    max-width: 55vw;
   }
-
-  .faq .container .accordion {
-    grid-row: 1;
-  }
-}
-
-@media (max-width: 575.98px) {
-  /* html {
-    font-size: 70%;
-  } */
 
   .footer {
     display: block;
