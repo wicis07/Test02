@@ -9,24 +9,29 @@
 </head>
 
 <body>
-    <!-- Header here! -->
-    <header>
-        <div class="logo">
-            <img src="asset/img/logo1.png" alt="Logo">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href=""><img src="./img/logo.svg" alt="" /></a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Plan Your Visit</a></li>
-                <li><a href="#">Our Service</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Book Appointment</a></li>
-            </ul>
-        </nav>
-        <div class="find-logo">
-            <img src="asset/img/find.jpg" alt="Find">
+        <div id="dropdown" class="navbar-nav">
+            <div class="navbar-middle">
+                <a href="index.html">Home</a>
+                <a href="">About Us</a>
+                <a href="plan-your-visit.html" class="active">Plan Your Visit</a>
+                <a href="">Book Appointment</a>
+            </div>
+            <div class="navbar-login">
+                <a href="" class="login">Login</a>
+            </div>
         </div>
-    </header>
+        <div class="navbar-right">
+            <a id="menu" class="menu">
+                <img src="./img/menu.svg" alt="" />
+            </a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
 
     <!-- Form Login Start -->
     <main>
@@ -61,6 +66,7 @@
             </a>
         </div>
         <div class="footer-link">
+            <p class="footer-title">Menu</p>
             <ul>
                 <li>
                     <a href="">Home</a>
@@ -70,9 +76,11 @@
                 </li>
                 <li>
                     <a href="">Our Services</a>
+                    <a href="">About Us</a>
                 </li>
                 <li>
                     <a href="">About Us</a>
+                    <a href="">Plan Your Visit</a>
                 </li>
                 <li>
                     <a href="">Book Appointment</a>
@@ -81,6 +89,7 @@
         </div>
         <div class="contact-us">
             <p>Contact Us</p>
+            <p class="footer-title">Contact Us</p>
             <div class="phone">
                 <!-- <span class="material-symbols-outlined"> call </span> -->
                 <img src="./img/phone.svg" alt="Phone Icon" />
@@ -94,6 +103,7 @@
         </div>
         <div class="follow">
             <p>Follow Us On</p>
+            <p class="footer-title">Follow Us On</p>
             <div class="sosmed-icon">
                 <a href="whatsapp.com">
                     <img src="./img/whatsapp.svg" alt="Whatsapp Icon" />
@@ -110,6 +120,8 @@
             <p>© 2023 Our Orthos</p>
         </div>
     </footer>
+    <!-- Footer end -->
+
 </body>
 
 </html>
