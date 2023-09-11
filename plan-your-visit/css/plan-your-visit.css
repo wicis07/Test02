@@ -417,13 +417,13 @@ hr {
     margin: 2.81rem 0;
   }
 
-  .footer .copyright {
-    grid-column: 1 / span 3;
-  }
-
   .footer .footer-logo {
     grid-column: 1 / span 3;
     justify-content: center;
+  }
+
+  .footer .copyright {
+    grid-column: 1 / span 3;
   }
 }
 /* Tablet */
