@@ -268,7 +268,6 @@ hr {
   padding-top: 1.87rem;
   background-color: var(--primary);
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
 }
 /* Footer Title */
 .footer .footer-title {
@@ -323,7 +322,7 @@ hr {
   height: 1.56rem;
 }
 /* Footer Copyright */
-footer .copyright {
+.footer .copyright {
   text-align: center;
   grid-column: 1 / span 4;
   font-size: 0.87rem;
@@ -420,10 +419,6 @@ footer .copyright {
 
   .faq {
     margin: 2.81rem 0;
-  }
-
-  .footer {
-    grid-template-columns: auto auto auto;
   }
 
   .footer .copyright {
