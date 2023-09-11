@@ -283,10 +283,6 @@ hr {
   align-items: center;
 }
 /* Footer Link */
-.footer .footer-link {
-  display: grid;
-}
-
 .footer .footer-link ul {
   list-style-type: none;
 }
