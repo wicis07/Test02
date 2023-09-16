@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Icon -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    /> -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/bookform-profilepage.css" />
+<style> 
+    .flex-container-text {
+        display: flex;
+        flex-wrap: nowrap;
+    
+    }
+    .flex-container-text > div {
+    
+        width: 596px;
+        margin: 1%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        /* text-align: center; */
+        line-height: 75px;
+        font-size: 90%;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+    
+    }
+
+    .flex-container > div {
+        /* background-color: #f1f1f1; */
+        width: 370px;
+        margin: 20px;
+        /* text-align: center; */
+        line-height: 70px;
+        font-size: 100%;
+        padding-left: 5%;
+        padding-right: 32%;
+        margin-bottom: 0px;
+    }
+
+    .border-form {
+        font-size: 10px;
+        color: #36A5B2;
+        margin-top: 0px;
+        margin-bottom: 100px;
+        margin-left: 200px;
+        margin-right: 600px;
+        border-bottom: 10px solid #36A5B2;
+        border-top: 10px solid #36A5B2;
+        border-left: 10px solid #36A5B2;
+        border-right: 10px solid #36A5B2;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 100px;
+        text-align: left;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    .inline{
+        display: inline;
+    }
+    .inline-block{
+        display: inline-block;
+        font-size: 10px;
+    }
+
+    .top-left{
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        
+    }
+
+</style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href=""><img src="./assets/img/logo1.png" alt="" /></a>
+      </div>
+      <div id="dropdown" class="navbar-nav">
+        <div class="navbar-middle">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="BookingForm.html">Plan Your Visit</a>
+          <a href="profilepage.html" class="active">Book Appointment</a>
+        </div>
+        <div class="navbar-login">
+          <a href="login.html" class="login">Login</a>
+        </div>
+      </div>
+      <div class="navbar-right">
+        <a id="menu" class="menu">
+          <img src="menu.svg" alt="" />
+        </a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+   <!-- BODY -->
+
+   <h1 style="color: #36A5B2;margin-left: 5%;margin-bottom: 0px;">Hi, Username</h1>
+   <div class="flex-container-text">
+       <div>
+       <h1 style="color: #36A5B2;width: 50px;"> Account</h1>
+       </div>
+       <div>
+       <h1 style="color: #36A5B2;">Booked<label style="padding: 10px;">Appointment </label> </h1>
+       </div>
+   </div>
+
+
+       <div class="flex-container">
+       <div class="border-form"> Username<label style="border: #36A5B2 solid; padding: 10px; color: #6C6C6D; margin: 10px;">Username</label>
+          Email</label><label style="border: #36A5B2 solid; padding: 5px;  color: #6C6C6D;margin: 10px;">username123@gmail.com</label>
+       </div>
+
+       <div class="border-form"> 
+           Dentist:<label style="border: #36A5B2 solid;padding: 10px; color: #6C6C6D;margin: 10px;">drg.nameofdentist </label><br> 
+           Date:<label style="border: #36A5B2 solid;padding: 10px; color: #6C6C6D;margin: 32px;">25/10/2023</label> <br>
+           Time:<label style="border: #36A5B2 solid;padding: 10px; color: #6C6C6D;margin: 31px;">17.00</label>
+       </div>
+
+   </div>
+   <br><br><br><br><br><br><br><br><br>
+
+     
+
+
+
+   <!-- BODY END -->
+   
+
+    <!-- start of footer -->
+    <footer class="footer">
+      <div class="footer-logo">
+        <a href="">
+          <img src="assets/svg/logo-white.svg" alt="Our Orthos Logo" />
+        </a>
+      </div>
+      <div class="footer-link">
+        <p class="footer-title">Menu</p>
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">About Us</a>
+          </li>
+          <li>
+            <a href="">Plan Your Visit</a>
+          </li>
+          <li>
+            <a href="">Book Appointment</a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-us">
+        <p class="footer-title">Contact Us</p>
+        <div class="phone">
+          <img src="assets/svg/phone.svg" alt="Phone Icon" />
+          <p>021 - 98765</p>
+        </div>
+        <div class="email">
+          <img src="assets/svg/message.svg" alt="Message Icon" />
+          <p>ourorthos@gmail.com</p>
+        </div>
+      </div>
+      <div class="follow">
+        <p class="footer-title">Follow Us On</p>
+        <div class="sosmed-icon">
+          <a href="whatsapp.com">
+            <img src="assets/svg/whatsapp.svg" alt="Whatsapp Icon" />
+          </a>
+          <a href="instagram.com">
+            <img src="assets/svg/instagram.svg" alt="Instagram Icon" />
+          </a>
+          <a href="facebook.com">
+            <img src="assets/svg/facebook.svg" alt="Facebook Icon" />
+          </a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2023 Our Orthos</p>
+      </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="menubutton.js"></script>
+  </body>
+</html>
