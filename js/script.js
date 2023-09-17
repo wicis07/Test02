@@ -1,4 +1,3 @@
-console.log("connected");
 // Navbar Menu Button
 var navbarNav = document.getElementById("dropdown"),
   menuButton = document.getElementById("menu");

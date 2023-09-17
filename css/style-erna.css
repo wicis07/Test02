@@ -15,23 +15,6 @@
   text-decoration: none;
 }
 
-/* for promo section */
-.promo-section {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  height: 25px;
-}
-
-/* for promo section link */
-
-.promo-section a {
-  text-decoration: underline;
-  color: white;
-  font-weight: 900;
-}
-
 /* Reset some default styles */
 body,
 ul {
@@ -123,10 +106,10 @@ ul {
   padding: 20px;
 }
 
-/* .column h1 {
+.column h1 {
   font-size: 24px;
   margin-bottom: 10px;
-} */
+}
 
 .column p {
   font-size: 16px;
