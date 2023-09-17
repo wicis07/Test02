@@ -21,20 +21,18 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/bookform-profilepage.css" />
-<style> 
-    
-
-    .border-form {
+    <style>
+      .border-form {
         font-size: 10px;
-        color: #36A5B2;
+        color: #36a5b2;
         margin-top: 10px;
         margin-bottom: 100px;
         margin-left: 300px;
         margin-right: 200px;
-        border-bottom: 10px solid #36A5B2;
-        border-top: 10px solid #36A5B2;
-        border-left: 10px solid #36A5B2;
-        border-right: 10px solid #36A5B2;
+        border-bottom: 10px solid #36a5b2;
+        border-top: 10px solid #36a5b2;
+        border-left: 10px solid #36a5b2;
+        border-right: 10px solid #36a5b2;
         padding-top: 20px;
         padding-bottom: 20px;
         padding-left: 50px;
@@ -44,44 +42,40 @@
         flex-direction: column;
         justify-content: center;
         align-items: center; */
-    }
-    .book-form {
+      }
+      .book-form {
         position: right;
-        background-color: #36A5B2;
+        background-color: #36a5b2;
         color: white;
         width: 100%;
         height: 60px;
         font-size: 50px;
-        font-family:Arial, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-    }
-
-    .inline-block{
+      .inline-block {
         display: inline-block;
         font-size: 10px;
-    }
+      }
 
-    .top-left{
+      .top-left {
         position: absolute;
         top: 8px;
         left: 16px;
-        
-    }
-     .navbar{
+      }
+      .navbar {
         position: relative;
         height: 20px;
-       color: #36A5B2;
-    }
+        color: #36a5b2;
+      }
 
-    .tulisan-miring{
+      .tulisan-miring {
         font-style: italic;
         font-size: 15px;
-        color:#6C6C6D;
+        color: #6c6c6d;
         width: 50px;
-        
-    }
-
-</style>
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -110,105 +104,119 @@
 
     <!-- BODY -->
 
-
     <div>
-        <h1 class="book-form" align="middle">Booking Form</h1>
-        
-
+      <h1 class="book-form" align="middle">Booking Form</h1>
     </div>
 
-    <h3 align="center" style="color: #36A5B2;">
-        Please choose your desired dentist, date, and time for your appointment
+    <h3 align="center" style="color: #36a5b2">
+      Please choose your desired dentist, date, and time for your appointment
     </h3>
-    
+
     <p class="border-form">
-        Dentist<br><br>
-        <select name="database-doctor" style="width: 128px;height: 40px;">
-            <option >Choose Dentist</option>
-            <option>drg.1</option>
-            <option>drg.2</option>
-            <option>drg.3</option>
-            <option>drg.4</option>
-     </select> <br><br>
+      Dentist<br /><br />
+      <select name="database-doctor" style="width: 128px; height: 40px">
+        <option>Choose Dentist</option>
+        <option>drg.1</option>
+        <option>drg.2</option>
+        <option>drg.3</option>
+        <option>drg.4</option>
+      </select>
+      <br /><br />
 
-        Date & Time<br>
+      Date & Time<br />
 
-         <select name="database-date" style="width: 130px;height: 40px;">
-            <option selected> Choose Date</option>
-            <option>5/09/2023</option>
-            <option>12/09/2023</option>
-            <option>20/09/2023</option>
-        </select> &ensp; &ensp; 
+      <select name="database-date" style="width: 130px; height: 40px">
+        <option selected>Choose Date</option>
+        <option>5/09/2023</option>
+        <option>12/09/2023</option>
+        <option>20/09/2023</option>
+      </select>
+      &ensp; &ensp;
 
-        <select name="database-time" style="width: 120px;height: 40px;">
-            <option selected> Choose Time</option>
-            <option>12.00</option>
-            <option>15.00</option>
-            <option>20.00</option>
-        </select> <br>
-        <label class="tulisan-miring" >Appointment details can be seen through your profile page after booking appointment.</label> <br><br>
+      <select name="database-time" style="width: 120px; height: 40px">
+        <option selected>Choose Time</option>
+        <option>12.00</option>
+        <option>15.00</option>
+        <option>20.00</option>
+      </select>
+      <br />
+      <label class="tulisan-miring"
+        >Appointment details can be seen through your profile page after booking
+        appointment.</label
+      >
+      <br /><br />
 
-       <input type="submit" value="Book Appointment" style="background-color: #36A5B2;color: white;border: #36A5B2; width: 120px;height: 40px;margin-left: 60%;">
+      <input
+        type="submit"
+        value="Book Appointment"
+        style="
+          background-color: #36a5b2;
+          color: white;
+          border: #36a5b2;
+          width: 120px;
+          height: 40px;
+          margin-left: 60%;
+        "
+      />
     </p>
 
-   <!-- BODY END -->
-   
+    <!-- BODY END -->
 
-   <!-- start of footer -->
-   <footer class="footer">
-    <div class="footer-logo">
-      <a href="">
-        <img src="assets/svg/logo-white.svg" alt="Our Orthos Logo" />
-      </a>
-    </div>
-    <div class="footer-link">
-      <p class="footer-title">Menu</p>
-      <ul>
-        <li>
-          <a href="">Home</a>
-        </li>
-        <li>
-          <a href="">About Us</a>
-        </li>
-        <li>
-          <a href="">Plan Your Visit</a>
-        </li>
-        <li>
-          <a href="">Book Appointment</a>
-        </li>
-      </ul>
-    </div>
-    <div class="contact-us">
-      <p class="footer-title">Contact Us</p>
-      <div class="phone">
-        <img src="assets/svg/phone.svg" alt="Phone Icon" />
-        <p>021 - 98765</p>
-      </div>
-      <div class="email">
-        <img src="assets/svg/message.svg" alt="Message Icon" />
-        <p>ourorthos@gmail.com</p>
-      </div>
-    </div>
-    <div class="follow">
-      <p class="footer-title">Follow Us On</p>
-      <div class="sosmed-icon">
-        <a href="whatsapp.com">
-          <img src="assets/svg/whatsapp.svg" alt="Whatsapp Icon" />
-        </a>
-        <a href="instagram.com">
-          <img src="assets/svg/instagram.svg" alt="Instagram Icon" />
-        </a>
-        <a href="facebook.com">
-          <img src="assets/svg/facebook.svg" alt="Facebook Icon" />
+    <!-- start of footer -->
+    <footer class="footer">
+      <div class="footer-logo">
+        <a href="">
+          <img src="assets/svg/logo-white.svg" alt="Our Orthos Logo" />
         </a>
       </div>
-    </div>
-    <div class="copyright">
-      <p>© 2023 Our Orthos</p>
-    </div>
-  </footer>
+      <div class="footer-link">
+        <p class="footer-title">Menu</p>
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">About Us</a>
+          </li>
+          <li>
+            <a href="">Plan Your Visit</a>
+          </li>
+          <li>
+            <a href="">Book Appointment</a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-us">
+        <p class="footer-title">Contact Us</p>
+        <div class="phone">
+          <img src="assets/svg/phone.svg" alt="Phone Icon" />
+          <p>021 - 98765</p>
+        </div>
+        <div class="email">
+          <img src="assets/svg/message.svg" alt="Message Icon" />
+          <p>ourorthos@gmail.com</p>
+        </div>
+      </div>
+      <div class="follow">
+        <p class="footer-title">Follow Us On</p>
+        <div class="sosmed-icon">
+          <a href="whatsapp.com">
+            <img src="assets/svg/whatsapp.svg" alt="Whatsapp Icon" />
+          </a>
+          <a href="instagram.com">
+            <img src="assets/svg/instagram.svg" alt="Instagram Icon" />
+          </a>
+          <a href="facebook.com">
+            <img src="assets/svg/facebook.svg" alt="Facebook Icon" />
+          </a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2023 Our Orthos</p>
+      </div>
+    </footer>
 
     <!-- Javascript -->
-    <script src="menubutton.js"></script>
+    <script src="main-script.js"></script>
   </body>
 </html>
