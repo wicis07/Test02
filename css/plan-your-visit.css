@@ -237,17 +237,18 @@ hr {
   margin: 1.25rem;
 }
 
-.faq .container .accordion .accordion-tab {
-  cursor: pointer;
-  padding: 0.62rem;
-}
-
 .faq .container .accordion .accordion-tab .label {
-  padding: 0.62rem;
+  padding: 0 0.62rem;
   color: var(--secondary);
   display: flex;
   justify-content: space-between;
   transition: 0.4s;
+  cursor: pointer;
+}
+
+.faq .container .accordion .accordion-tab .label p {
+  font-weight: bold;
+  padding: 0.62rem;
 }
 
 .faq .container .accordion .accordion-tab .content {
@@ -256,6 +257,11 @@ hr {
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.2s ease-out;
+}
+
+.faq .container .accordion .accordion-tab .content p {
+  font-size: 0.95rem;
+  padding: 0 0.62rem 0.62rem;
 }
 
 .faq .container .accordion hr {
