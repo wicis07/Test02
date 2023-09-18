@@ -7,17 +7,16 @@ menuButton.onclick = function () {
 };
 
 // Accordion
-var acc = document.getElementsByClassName("label");
-var i;
+let labels = document.querySelectorAll(".label");
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
+labels.forEach(function (label) {
+  label.addEventListener("click", function () {
     this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "rem";
-    }
+    let content = this.nextElementSibling;
+
+    content.style.maxHeight =
+      !content.style.maxHeight || content.style.maxHeight === "0px"
+        ? content.scrollHeight + "px"
+        : "0px";
   });
-}
+});
