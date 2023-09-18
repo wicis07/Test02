@@ -87,11 +87,11 @@ body {
   flex-direction: column;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
-.konten{
-  text-align: center;
-  
+.email{
+  text-align: left;
 }
 
 .form label {
@@ -125,6 +125,10 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
 }
 
 /* Konten End */

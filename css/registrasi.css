@@ -85,6 +85,7 @@ main {
     flex: 1;
     padding: 20px;
     width: 100%;
+    flex-direction: column;
 }
 
 .left img{
@@ -137,6 +138,10 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
 }
 /* Konten End */
 

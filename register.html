@@ -37,25 +37,27 @@
     <main>
         <div class="register-container">
             <h2>Register</h2>
-            <form action="proses_register.php" method="POST">
+            <form action="proses_register.php" method="POST" autocomplete="off">
                 <div class="form-group">
                     <label for="username">Username</label>
-                    <input type="text" id="username" name="username" placeholder="Enter Username">
+                    <input type="text" id="username" name="username" placeholder="Enter Username" autofocus>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email" id="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Enter Email" required>
                 </div>
                 <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                    <label for="password" id="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required minlength="8">
                 </div>
                 <button type="submit">Register</button>
             </form>
+            <p id="register-message" class="error-message"></p>
         </div>
         <!-- <div class="left">
             <img src="asset/img/regis.jpg" alt="regis">
         </div> -->
+        <script src="java.js"></script>
     </main>
 
     <!-- Footer Start -->
