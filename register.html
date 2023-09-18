@@ -12,74 +12,72 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-logo">
-            <a href=""><img src="./img/logo.svg" alt="" /></a>
+          <a href=""><img src="assets/svg/logo.svg" alt="" /></a>
         </div>
         <div id="dropdown" class="navbar-nav">
-            <div class="navbar-middle">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="plan-your-visit.html" class="active">Plan Your Visit</a>
-                <a href="profile page.html">Book Appointment</a>
-            </div>
-            <div class="navbar-login">
-                <a href="login.html" class="login">Login</a>
-            </div>
+          <div class="navbar-middle">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="plan-your-visit.html">Plan Your Visit</a>
+            <a href="profile page.html">Book Appointment</a>
+          </div>
+          <div class="navbar-login">
+            <a href="login.html" class="login">Login</a>
+          </div>
         </div>
         <div class="navbar-right">
-            <a id="menu" class="menu">
-                <img src="./img/menu.svg" alt="" />
-            </a>
+          <a id="menu" class="menu">
+            <img src="assets/svg/menu.svg" alt="" />
+          </a>
         </div>
-    </nav>
-    <!-- Navbar End -->
+      </nav>
+      <!-- Navbar End -->
 
     <!-- Form Login Start -->
-    <main class="main">
-        <div class="container-parent-registrasi">
-            <div class="register-container">
-                <h2>Register</h2>
-                <form action="proses_register.php" method="POST">
-                    <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username" placeholder="Enter Username">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter Email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Enter Password" required>
-                    </div>
-                    <button type="submit">Register</button>
-                </form>
-            </div>
+    <main>
+        <div class="register-container">
+            <h2>Register</h2>
+            <form action="proses_register.php" method="POST" autocomplete="off">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter Username" autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" id="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required minlength="8">
+                </div>
+                <button type="submit">Register</button>
+            </form>
+            <p id="register-message" class="error-message"></p>
         </div>
         <!-- <div class="left">
             <img src="asset/img/regis.jpg" alt="regis">
         </div> -->
+        <script src="./js/java.js"></script>
     </main>
 
-    <!-- Footer Start -->
+    <!-- start of footer -->
     <footer class="footer">
         <div class="footer-logo">
           <a href="">
-            <img src="./img/logo-white.svg" alt="Our Orthos Logo" />
+            <img src="assets/svg/logo-white.svg" alt="Our Orthos Logo" />
           </a>
         </div>
         <div class="footer-link">
+          <p class="footer-title">Menu</p>
           <ul>
             <li>
               <a href="">Home</a>
             </li>
             <li>
-              <a href="">Plan Your Visit</a>
-            </li>
-            <li>
-              <a href="">Our Services</a>
-            </li>
-            <li>
               <a href="">About Us</a>
+            </li>
+            <li>
+              <a href="">Plan Your Visit</a>
             </li>
             <li>
               <a href="">Book Appointment</a>
@@ -87,29 +85,27 @@
           </ul>
         </div>
         <div class="contact-us">
-          <p>Contact Us</p>
+          <p class="footer-title">Contact Us</p>
           <div class="phone">
-            <!-- <span class="material-symbols-outlined"> call </span> -->
-            <img src="./img/phone.svg" alt="Phone Icon" />
+            <img src="assets/svg/phone.svg" alt="Phone Icon" />
             <p>021 - 98765</p>
           </div>
           <div class="email">
-            <!-- <span class="material-symbols-outlined"> mail </span> -->
-            <img src="./img/message.svg" alt="Message Icon" />
+            <img src="assets/svg/message.svg" alt="Message Icon" />
             <p>ourorthos@gmail.com</p>
           </div>
         </div>
         <div class="follow">
-          <p>Follow Us On</p>
+          <p class="footer-title">Follow Us On</p>
           <div class="sosmed-icon">
             <a href="whatsapp.com">
-              <img src="./img/whatsapp.svg" alt="Whatsapp Icon" />
+              <img src="assets/svg/whatsapp.svg" alt="Whatsapp Icon" />
             </a>
             <a href="instagram.com">
-              <img src="./img/instagram.svg" alt="Instagram Icon" />
+              <img src="assets/svg/instagram.svg" alt="Instagram Icon" />
             </a>
             <a href="facebook.com">
-              <img src="./img/facebook.svg" alt="Facebook Icon" />
+              <img src="assets/svg/facebook.svg" alt="Facebook Icon" />
             </a>
           </div>
         </div>
@@ -117,7 +113,6 @@
           <p>© 2023 Our Orthos</p>
         </div>
       </footer>
-    <!-- Footer end -->
 
 </body>
 
