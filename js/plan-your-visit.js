@@ -1,18 +1,27 @@
 // Navbar Menu Button
-var navbarNav = document.getElementById("dropdown"),
-  menuButton = document.getElementById("menu");
+const navbarNav = document.querySelector(".navbar-nav");
+const menuButton = document.querySelector(".menu");
 
-menuButton.onclick = function () {
-  navbarNav.classList.toggle("open");
-};
+menuButton.addEventListener("click", () => {
+  const visibility = navbarNav.getAttribute("data-visible");
+
+  if (visibility === "false") {
+    navbarNav.setAttribute("data-visible", true);
+    menuButton.setAttribute("aria-expanded", true);
+  } else if (visibility === "true") {
+    navbarNav.setAttribute("data-visible", false);
+    menuButton.setAttribute("aria-expanded", false);
+  } else {
+  }
+});
 
 // Accordion
-let labels = document.querySelectorAll(".label");
+const labels = document.querySelectorAll(".label");
 
 labels.forEach(function (label) {
   label.addEventListener("click", function () {
     this.classList.toggle("active");
-    let content = this.nextElementSibling;
+    const content = this.nextElementSibling;
 
     content.style.maxHeight =
       !content.style.maxHeight || content.style.maxHeight === "0px"
