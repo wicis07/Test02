@@ -31,7 +31,7 @@
       <div class="navbar-logo">
         <a href=""><img src="assets/svg/logo.svg" alt="" /></a>
       </div>
-      <div id="dropdown" class="navbar-nav">
+      <div id="dropdown" data-visible="false" class="navbar-nav">
         <div class="navbar-middle">
           <a href="index.html" class="active">Home</a>
           <a href="about.html">About Us</a>
@@ -43,7 +43,7 @@
         </div>
       </div>
       <div class="navbar-right">
-        <a id="menu" class="menu">
+        <a aria-controls="dropdown" aria-expanded="false" class="menu">
           <img src="assets/svg/menu.svg" alt="" />
         </a>
       </div>

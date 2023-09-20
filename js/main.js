@@ -1,10 +1,19 @@
 // Navbar Menu Button
-var navbarNav = document.getElementById("dropdown"),
-  menuButton = document.getElementById("menu");
+const navbarNav = document.querySelector(".navbar-nav");
+const menuButton = document.querySelector(".menu");
+const body = document.body;
 
-menuButton.onclick = function () {
-  navbarNav.classList.toggle("open");
-};
+menuButton.addEventListener("click", () => {
+  const visibility = navbarNav.getAttribute("data-visible");
+
+  if (visibility === "false") {
+    navbarNav.setAttribute("data-visible", true);
+    menuButton.setAttribute("aria-expanded", true);
+  } else if (visibility === "true") {
+    navbarNav.setAttribute("data-visible", false);
+    menuButton.setAttribute("aria-expanded", false);
+  }
+});
 
 // SET INTERVAL FOR CAROUSEL SERVIVES
 
@@ -30,17 +39,16 @@ function updateCarousel() {
 setInterval(nextService, intervalTime);
 
 // Accordion
-var acc = document.getElementsByClassName("label");
-var i;
+const labels = document.querySelectorAll(".label");
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
+labels.forEach(function (label) {
+  label.addEventListener("click", function () {
     this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "rem";
-    }
+    const content = this.nextElementSibling;
+
+    content.style.maxHeight =
+      !content.style.maxHeight || content.style.maxHeight === "0px"
+        ? content.scrollHeight + "px"
+        : "0px";
   });
-}
+});

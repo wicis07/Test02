@@ -30,8 +30,7 @@
       <div class="navbar-logo">
         <a href=""><img src="./assets/img/logo1.png" alt="" /></a>
       </div>
-      <div id="dropdown" class="navbar-nav">
-        <div class="navbar-middle">
+      <div id="dropdown" data-visible="false" class="navbar-nav">        <div class="navbar-middle">
           <a href="index.html">Home</a>
           <a href="about.html">About Us</a>
           <a href="BookingForm.html">Plan Your Visit</a>
@@ -42,8 +41,7 @@
         </div>
       </div>
       <div class="navbar-right">
-        <a id="menu" class="menu">
-          <img src="menu.svg" alt="" />
+        <a aria-controls="dropdown" aria-expanded="false" class="menu">          <img src="menu.svg" alt="" />
         </a>
       </div>
     </nav>

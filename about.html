@@ -29,7 +29,7 @@
       <div class="navbar-logo">
         <a href="index.html"><img src="./assets/img/logo.svg" alt="" /></a>
       </div>
-      <div id="dropdown" class="navbar-nav">
+      <div id="dropdown" data-visible="false" class="navbar-nav">
         <div class="navbar-middle">
           <a href="index.html">Home</a>
           <a href="about.html" class="active">About Us</a>
@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="navbar-right">
-        <a id="menu" class="menu">
+        <a aria-controls="dropdown" aria-expanded="false" class="menu">
           <img src="./assets/img/menu.svg" alt="" />
         </a>
       </div>
