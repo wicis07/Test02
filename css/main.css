@@ -97,7 +97,6 @@ body {
   padding-top: 1.87rem;
   background-color: var(--primary);
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
 }
 
 /* Footer Title */
@@ -117,10 +116,6 @@ body {
 }
 
 /* Footer Link */
-.footer .footer-link {
-  display: grid;
-}
-
 .footer .footer-link ul {
   list-style-type: none;
 }
@@ -766,17 +761,13 @@ th {
     margin: 2.81rem 0;
   }
 
-  .footer {
-    grid-template-columns: auto auto auto;
+  .footer .footer-logo {
+    grid-column: 1 / span 3;
+    justify-content: center;
   }
 
   .footer .copyright {
     grid-column: 1 / span 3;
-  }
-
-  .footer .footer-logo {
-    grid-column: 1 / span 3;
-    justify-content: center;
   }
 }
 
