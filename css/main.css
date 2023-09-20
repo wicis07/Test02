@@ -605,7 +605,7 @@ hr {
 
 .faq .container .accordion .accordion-tab .content {
   padding: 0 0.62rem;
-  color: black;
+  color: var(--secondary);
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.2s ease-out;
