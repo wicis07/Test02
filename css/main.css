@@ -88,6 +88,18 @@ body {
 
 .navbar .navbar-right a {
   margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 91.97px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0;
 }
 
 /* FOOTER OVERALL */
@@ -687,10 +699,6 @@ th {
     display: block;
   }
 
-  .navbar .navbar-right a[aria-expanded="true"] img {
-    content: url("/assets/img/close.svg");
-  }
-
   .navbar .navbar-nav {
     position: fixed;
     inset: calc(100% - 91.97px) 0 0 40%;
@@ -707,6 +715,18 @@ th {
   }
 
   .navbar-nav[data-visible="true"] {
+    transform: translateX(0%);
+  }
+
+  .overlay {
+    display: block;
+    z-index: 999;
+    transform: translateX(-100%);
+    transition: transform 50ms ease-in, opacity 50ms linear;
+  }
+
+  .overlay[data-visible="true"] {
+    opacity: 0.5;
     transform: translateX(0%);
   }
 
