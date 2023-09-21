@@ -699,10 +699,6 @@ th {
     display: block;
   }
 
-  .navbar .navbar-right a[aria-expanded="true"] img {
-    content: url("/assets/img/close.svg");
-  }
-
   .navbar .navbar-nav {
     position: fixed;
     inset: calc(100% - 91.97px) 0 0 40%;

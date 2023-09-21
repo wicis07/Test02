@@ -1,6 +1,7 @@
 // Navbar Menu Button
 const navbarNav = document.querySelector(".navbar-nav");
 const menuButton = document.querySelector(".menu");
+const menuImg = document.querySelector(".menu-img");
 const overlay = document.querySelector(".overlay");
 const body = document.body;
 
@@ -10,6 +11,11 @@ function updateVisibility() {
 
   navbarNav.setAttribute("data-visible", newVisibility);
   menuButton.setAttribute("aria-expanded", newVisibility);
+  if (newVisibility === "false") {
+    menuImg.src = "assets/svg/menu.svg";
+  } else {
+    menuImg.src = "assets/svg/close.svg";
+  }
   overlay.setAttribute("data-visible", newVisibility);
 }
 
