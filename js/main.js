@@ -4,18 +4,21 @@ const menuButton = document.querySelector(".menu");
 const overlay = document.querySelector(".overlay");
 const body = document.body;
 
-menuButton.addEventListener("click", () => {
+function updateVisibility() {
   const visibility = navbarNav.getAttribute("data-visible");
+  const newVisibility = visibility === "false" ? "true" : "false";
 
-  if (visibility === "false") {
-    navbarNav.setAttribute("data-visible", true);
-    menuButton.setAttribute("aria-expanded", true);
-    overlay.setAttribute("data-visible", true);
-  } else if (visibility === "true") {
-    navbarNav.setAttribute("data-visible", false);
-    menuButton.setAttribute("aria-expanded", false);
-    overlay.setAttribute("data-visible", false);
-  }
+  navbarNav.setAttribute("data-visible", newVisibility);
+  menuButton.setAttribute("aria-expanded", newVisibility);
+  overlay.setAttribute("data-visible", newVisibility);
+}
+
+menuButton.addEventListener("click", () => {
+  updateVisibility();
+});
+
+overlay.addEventListener("click", () => {
+  updateVisibility();
 });
 
 // SET INTERVAL FOR CAROUSEL SERVIVES
