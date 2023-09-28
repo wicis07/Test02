@@ -772,6 +772,121 @@ th {
       margin-bottom: 50px;
     }
 
+    
+/* Konten ara start */
+.main{
+  display: flexbox; 
+  background-color: white;
+  width: 600px;
+  height: 300%;
+  margin: 20px auto;
+  padding: 50px;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.email{
+  text-align: left;
+}
+
+.form label {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.main img{
+  width: 240px;
+  height: 180px;
+}
+  
+button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 6px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+}
+
+/* Register */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 20px;
+  width: 100%;
+}
+
+.register-container {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  top: 0;
+  right: 0;
+  width: 550px;
+  padding: 100px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin: 20px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Konten ara End */
+
 /* End of Profil page */
 /* Media Queries */
 /* Small Screen desktop/laptop */
@@ -1281,116 +1396,97 @@ th {
   }
 }
 
-/* Konten ara start */
-.main{
-  display: flexbox; 
-  background-color: white;
-  width: 600px;
-  height: 300%;
-  margin: 20px auto;
-  padding: 50px;
-  flex-direction: column;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-.email{
-  text-align: left;
-}
-
-.form label {
-  margin-bottom: 20px;
-  text-align: right;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-.main img{
-  width: 240px;
-  height: 180px;
-}
+  /* Default style for larger screens */
+  body {
+    font-size: 16px;
+  }
   
-button {
-  background-color: #ff0000;
-  color: #fff;
-  border: none;
-  padding: 6px 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  margin: 10px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-.error-message {
-  color: red;
-}
-
-/* Register */
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  padding: 20px;
-  width: 100%;
-}
-
-.register-container {
-  background-color: #ffffff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  top: 0;
-  right: 0;
-  width: 550px;
-  padding: 100px;
-}
-
-h2 {
-  margin-bottom: 20px;
-}
-
-.form-group {
-  margin: 20px auto;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-  text-align: left;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-button {
-  background-color: #ff0000;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-/* Konten ara End */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Responsive styles for login smaller screens */
+  @media only screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      display: none;
+    }
+  
+    .navbar-nav a {
+      padding: 10px;
+      text-align: center;
+      color: #fff;
+    }
+  
+    .navbar-right {
+      display: block;
+    }
+  
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  
+    .main {
+      padding: 20px;
+    }
+  
+    .konten {
+      text-align: center;
+    }
+  
+    .konten img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .loginForm {
+      width: 100%;
+    }
+  
+    .form-group {
+      margin-bottom: 15px;
+    }
+  
+    #submit-btn {
+      margin-top: 15px;
+    }
+  
+    .footer {
+      padding: 20px;
+    }
+  
+    .footer-link {
+      margin-top: 20px;
+    }
+  
+    .footer-link ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    .footer-link li {
+      margin-bottom: 10px;
+    }
+  
+    .contact-us,
+    .follow {
+      margin-top: 20px;
+    }
+  }
